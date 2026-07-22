@@ -1,0 +1,9 @@
+<resources>
+    <style name="CalcButton" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="android:layout_width">0dp</item><item name="android:layout_height">72dp</item>
+        <item name="android:layout_columnWeight">1</item><item name="cornerRadius">24dp</item>
+        <item name="android:textSize">22sp</item><item name="backgroundTint">@color/surface</item><item name="android:textColor">@color/on_surface</item>
+    </style>
+    <style name="CalcButton.Operator" parent="CalcButton"><item name="backgroundTint">@color/operator</item></style>
+    <style name="CalcButton.Primary" parent="CalcButton"><item name="backgroundTint">@color/primary</item><item name="android:textColor">@color/on_primary</item></style>
+</resources>
