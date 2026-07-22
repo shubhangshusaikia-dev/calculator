@@ -1,0 +1,10 @@
+<resources>
+    <color name="primary">#6750A4</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="secondary">#FFB74D</color>
+    <color name="background">#FFFBFE</color>
+    <color name="surface">#F3EDF7</color>
+    <color name="on_surface">#1D1B20</color>
+    <color name="operator">#EADDFF</color>
+    <color name="danger">#BA1A1A</color>
+</resources>

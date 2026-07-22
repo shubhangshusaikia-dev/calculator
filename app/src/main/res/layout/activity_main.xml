@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:orientation="vertical" android:padding="16dp">
+
+    <HorizontalScrollView android:id="@+id/expressionScroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:gravity="bottom|end" android:orientation="vertical">
+            <TextView android:id="@+id/expressionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/on_surface" android:textSize="44sp" android:text="0" />
+            <TextView android:id="@+id/resultText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/primary" android:textSize="26sp" android:text="" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="end" android:orientation="horizontal" android:paddingBottom="8dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/historyButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="History" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/copyButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="Copy" />
+    </LinearLayout>
+
+    <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="4" android:rowCount="5" android:useDefaultMargins="true">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnAC" style="@style/CalcButton.Operator" android:text="AC" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSign" style="@style/CalcButton.Operator" android:text="+/-" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnPercent" style="@style/CalcButton.Operator" android:text="%" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnDivide" style="@style/CalcButton.Primary" android:text="÷" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn7" style="@style/CalcButton" android:text="7" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn8" style="@style/CalcButton" android:text="8" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn9" style="@style/CalcButton" android:text="9" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnMultiply" style="@style/CalcButton.Primary" android:text="×" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn4" style="@style/CalcButton" android:text="4" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn5" style="@style/CalcButton" android:text="5" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn6" style="@style/CalcButton" android:text="6" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnMinus" style="@style/CalcButton.Primary" android:text="-" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn1" style="@style/CalcButton" android:text="1" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn2" style="@style/CalcButton" android:text="2" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn3" style="@style/CalcButton" android:text="3" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnPlus" style="@style/CalcButton.Primary" android:text="+" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnDel" style="@style/CalcButton.Operator" android:text="DEL" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn0" style="@style/CalcButton" android:text="0" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnDot" style="@style/CalcButton" android:text="." />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnEquals" style="@style/CalcButton.Primary" android:text="=" />
+    </GridLayout>
+</LinearLayout>
